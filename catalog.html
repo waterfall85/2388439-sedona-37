@@ -35,11 +35,17 @@
       <section class="catalog_hotels">
         <h2 class="visually_hidden">Список гостиниц с возможностью фильтрации</h2>
         <form class="filter_hotels" action="" method="">
-          <fieldset class="catalog-filter-group">
-            <legend class="catalog-filter-title">Инфраструктура:</legend>
+          <fieldset class="catalog_filter_group">
+            <legend class="catalog_filter_title">Инфраструктура:</legend>
+              <label class="control"><input class="control_input" type="checkbox" name="pool" checked>Бассейн</label>
+              <label class="control"><input class="control_input" type="checkbox" name="parking" checked>Парковка</label>
+              <label class="control"><input class="control_input" type="checkbox" name="wifi">Wi-Fi</label>
           </fieldset>
-          <fieldset class="catalog-filter-group">
-          <legend class="catalog-filter-title">Тип жилья</legend>
+          <fieldset class="catalog_filter_group">
+            <legend class="catalog_filter_title">Тип жилья</legend>
+              <label class="control"><input class="control_radio" type="radio" name="hotel" checked>Гостиница</label>
+              <label class="control"><input class="control_radio" type="radio" name="hotel">Мотель</label>
+              <label class="control"><input class="control_radio" type="radio" name="hotel">Апартаменты</label>
         </fieldset>
         <button class="button_apply" type="submit">Применить</button>
         <button class="button_reset" type="submit">Сбросить</button>
