@@ -1,44 +1,64 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Заголовок страницы</title>
+    <title>HTML Academy: Седона</title>
   </head>
+
   <body>
+
     <header>
-      <h1>Добро пожаловать в Седону!</h1>
-      <nav class="header-nav">
-        <div><a class="main-header-logo"><img src="" alt="Логотип Седона"></a></div> <!--Логотип-->
-        <ul class="header_menu">
-          <li><a href="">Главная</a></li>
-          <li><a href="">О Седоне</a></li>
-          <li><a href="">Гостиницы</a></li>
+      <nav class="page-nav">
+        <a class="logo" href="index.html" aria-current="page">
+          <img src="#" width="140" height="70" alt="Логотип Седона">
+        </a>
+
+        <ul class="page-nav-list list-reset">
+          <li class="page-nav-item">
+            <a class="page-nav-link page-nav-current" href="index.html" aria-current="page">Главная</a>
+          </li>
+          <li class="page-nav-item">
+            <a class="page-nav-link" href="#">О Седоне</a>
+          </li>
+          <li class="page-nav-item">
+            <a class="page-nav-link" href="catalog.html">Гостиницы</a>
+          </li>
         </ul>
-        <ul class="header_menu_button">
-          <li></li> <!--Лупа-->
-          <li></li> <!--Колокольчик-->
-          <li></li> <!--Хочу сюда-->
+
+        <ul class="page-nav-list list-reset">
+          <li class="user-item">
+            <a class="user-link user-link-search" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+            <li class="user-item">
+              <a class="user-link user-link-favorites" href="#">
+                <span class="user-favorites-num">12</span>
+                <span class="visually-hidden">Избранное</span>
+              </a>
+            </li>
         </ul>
+        <a class="button navigation-button button-modal" href="#">Хочу сюда</a>
       </nav>
     </header>
-    <main class="main_index">
+    <main>
       <section class="welcome">
         <h2>Добро пожаловать в великолепие!</h2>
         <ul class="welcome_list_images">
           <li>
             <div>
-              <img src="" alt="Изображение каньёна"> <!--Фото каньёна-->
+              <img src="" alt="">
             </div>
           </li>
           <li>
             <div>
-              <img src="" alt="Welcome to the gargeous">
+              <img src="" alt="">
             </div>
           </li>
           <li>
             <div>
-              <img src="" alt="Sedona Because the Grand Canyon secks">
+              <img src="" alt="">
             </div>
           </li>
         </ul>
@@ -46,107 +66,97 @@
       <section class="small_town">
         <h2>Седона-небольшой городок в Аризоне.</h2>
         <ul class="reason_list">
-          <li>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</li>
+          <li></li>
+          <li></li>
         </ul>
       </section>
       <section class="real_town">
-        <div class="blue_square_town_list">
         <h2>Настоящий городок.</h2>
-          <ul class="real_town_list">
-            <li></li> <!--Белая полоса-->
-            <li></li> <!--Седоан-не аттракцион для туристов, там течёт своя жизнь-->
-          </ul>
-        </div>
-        <div class="img_with_flags">
-          <img src="" alt=" Пезаж из города с флагами">
+        <ul class="real_town_list">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <div>
+          <img src="" alt="">
         </div>
       </section>
       <section class="menu_description">
         <h2>Небольшая площадь, красивая дорога, мало туристов.</h2>
         <ul class="small_area">
-          <li></li> <!--Небольшая площадь-->
-          <li></li> <!--Разделительная полоса-->
-          <li></li> <!--Все достопримечательности очень близко-->
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
         <ul class="beautiful_road">
-          <li></li> <!--Красивая дорога-->
-          <li></li> <!--Разделительная плоса-->
-          <li></li> <!--Ехать в Седону из Лас-Вегаса совсем не скучно!-->
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
         <ul class="few_tourists">
-          <li></li> <!--Мало туристов-->
-          <li></li> <!--Разделительная плоса-->
-          <li></li> <!--Большинство едет в Гранд Каньон и толпится там-->
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </section>
       <section class="devil_bridge">
         <h2>Там есть мост дьявола.</h2>
         <ul class="devil_bridge_list">
-          <li></li> <!--Там есть мост дьявола-->
-          <li></li> <!--Разделительная плоса-->
-          <li></li> <!--Да, по нему можно пройти! Если вы осмелитесь, разумеется-->
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
         <div>
           <img src="" alt="">
         </div>
       </section>
       <section class="come_to_sedona">
+        <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
         <ul class="come_to_sedona_list">
-          <li>Приезжайте в Седону отдохнуть в комфорте и уюте!</li>
+          <li></li>
           <li></li>
         </ul>
       </section>
       <section class="housing_food_souvenirs">
+        <h2>Жильё, еда, сувениры.</h2>
         <ul class="housing">
-          <li>
-            <div><img src="" alt="Домик"></div>
-          </li>
-          <li>Жильё</li>
-          <li>Рекомендуем пожить в настоящем мотеле, всё как в кино!</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
         <ul class="food">
-          <li>
-            <div><img src="" alt="Бургер"></div>
-          </li>
-          <li>Еда</li>
-          <li>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
         <ul class="souvenirs">
-          <li>
-            <div><img src="" alt="Подарочная коробка"></div>
-          </li>
-          <li>Сувениры</li>
-          <li>Не только китайского, но и настоящего местного производства!</li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
       </section>
       <section class="hotel_search">
         <h2>Поиск гостиниы в Седоне.</h2>
-          <ul class="hotel_search_list">
-            <li>Заинтересовались</li>
-            <li>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</li>
-          </ul>
+        <div>
+          <img src="">
+        </div>
+        <ul class="hotel_search_list">
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
         <form>
+          <input></input>
           <button>Подписаться</button>
         </form>
       </section>
     </main>
     <footer>
-      <section class="subscribe">
-        <div>
-          <img src="" alt="Фото каьёна на зеднем плане">
-        </div>
-        <p>Подпишитесь на рассылку</p>
-        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="" method="">
-          <input type="text" name="""></input>
-          <input type="submit" name="" value="Подписаться"></input>
-        </form>
-      </section>
       <section>
         <ul> <!--Иконки соц.сетей-->
-          <li><div><img src="" alt=""></div></li>
-          <li><div><img src="" alt=""></div></li>
-          <li><div><img src="" alt=""></div></li>
+          <li><div><img src=""></div></li>
+          <li><div><img src=""></div></li>
+          <li><div><img src=""></div></li>
         </ul>
         <address></address> <!--Номер телефона-->
         <spam></spam> <!--html academy-->
