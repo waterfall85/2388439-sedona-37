@@ -6,39 +6,39 @@
     <title>Каталог</title>
   </head>
   <body>
-    <header class="page-header">
-      <nav class="nav">
-        <a class="nav-logo" href="index.html">
-          <img src="#" width="140" height="70" alt="Логотип Седона">
-        </a>
+  <header>
+    <nav class="page-nav">
+      <a class="logo" href="index.html" aria-current="page">
+        <img src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
+      </a>
 
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">Главная</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">О Седоне</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-current" href="catalog.html" aria-current="page">Гостиницы</a>
-          </li>
-        </ul>
-        <ul class="user-list list-reset">
-          <li class="user-item">
-            <a class="user-link user-link-search" href="#">
-              <span class="visually-hidden">Поиск</span>
-            </a>
-          </li>
-          <li class="user-item">
-            <a class="user-link user-link-favorites" href="#">
-              <span class="user-favorites-num">12</span>
-              <span class="visually-hidden">Избранное</span>
-            </a>
-          </li>
-        </ul>
-        <a class="button button-modal" href="#">Хочу сюда</a>
-      </nav>
-    </header>
+      <ul class="page-nav-list list-reset">
+        <li class="page-nav-item">
+          <a class="page-nav-link page-nav-current" href="index.html" aria-current="page">Главная</a>
+        </li>
+        <li class="page-nav-item">
+          <a class="page-nav-link" href="#">О Седоне</a>
+        </li>
+        <li class="page-nav-item">
+          <a class="page-nav-link" href="catalog.html">Гостиницы</a>
+        </li>
+      </ul>
+
+      <ul class="page-nav-list list-reset">
+        <li class="user-item">
+          <a class="user-link user-link-search" href="#">
+            <span class="visually-hidden"><img src="images/search.svg" alt="поиск на сайте"></span>
+          </a>
+        <li class="user-item">
+          <a class="user-link user-link-favorites" href="#">
+            <span class="user-favorites-num">12</span>
+            <span class="visually-hidden"><img src="images/favorites.svg" alt="Избранное"></span>
+          </a>
+        </li>
+      </ul>
+      <a class="button navigation-button button-modal" href="#">Хочу сюда</a>
+    </nav>
+  </header>
     <main class="main">
       <section class="filter">
         <h1 class="filter-title">Гостиницы Седоны</h1>
