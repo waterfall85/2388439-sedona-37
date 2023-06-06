@@ -6,7 +6,7 @@
   },
   "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.guides.bracketPairs": "active",
-  "files.insertFinalNewline": true,
+
   "files.trimFinalNewlines": true,
   "files.trimTrailingWhitespace": true,
   "css.format.spaceAroundSelectorSeparator": true,
@@ -21,6 +21,7 @@
   "html.format.endWithNewline": true,
   "html.format.indentInnerHtml": true
   {
+    {
     // Форматировать при сохранении
     "editor.formatOnSave": true,
     // Форматировать при вставке
@@ -33,6 +34,7 @@
     "editor.linkedEditing": true,
     // Размер шрифта в редакторе
     "editor.fontSize": 14,
+    }
     // Активируем раскраску парных скобок. true по умолчанию
     "editor.bracketPairColorization.enabled": true,
     // Какой клавишей проставляются несколько курсоров
@@ -586,5 +588,6 @@
       ]
     },
     "csscomb.formatOnSave": true,
+  }
   }
 }
