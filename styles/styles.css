@@ -24,3 +24,8 @@ body{
 header{
     background-color:#ffffff;
 }
+
+.hero{
+    background-image: url(../images/index_background.png);
+    }
+}
