@@ -23,9 +23,10 @@ body{
 
 header{
     background-color:#ffffff;
+
 }
 
 .hero{
-    background-image: url(../images/index_background.png);
+    background: url(../images/index_background.png) no-repeat;
+
     }
-}
