@@ -1,59 +1,58 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Каталог</title>
   </head>
+
   <body>
+    <header class="page-header">
+      <nav class="page-nav">
+        <a class="logo" href="index.html">
+          <img src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
+        </a>
 
-  <header>
-    <nav class="page-nav">
-      <a class="logo" href="index.html">
-        <img src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
-      </a>
+        <ul class="page-nav-list list-reset">
+          <li class="page-nav-item">
+            <a class="page-nav-link page-nav-current" href="index.html">Главная</a>
+          </li>
+          <li class="page-nav-item">
+            <a class="page-nav-link" href="#">О Седоне</a>
+          </li>
+          <li class="page-nav-item">
+            <a class="page-nav-link" href="catalog.html">Гостиницы</a>
+          </li>
+        </ul>
 
-      <ul class="page-nav-list list-reset">
-        <li class="page-nav-item">
-          <a class="page-nav-link page-nav-current" href="index.html" >Главная</a>
-        </li>
-        <li class="page-nav-item">
-          <a class="page-nav-link" href="#">О Седоне</a>
-        </li>
-        <li class="page-nav-item">
-          <a class="page-nav-link" href="catalog.html">Гостиницы</a>
-        </li>
-      </ul>
-
-      <ul class="page-nav-list list-reset">
-        <li class="user-item">
-          <a class="user-link user-link-search" href="#">
-            <span class="visually-hidden"><img src="images/search.svg" alt="поиск на сайте"></span>
-          </a>
-        </li>
-        <li class="user-item">
-          <a class="user-link user-link-favorites" href="#">
-            <span class="user-favorites-num">12</span>
-            <span class="visually-hidden"><img src="images/favorites.svg" alt="Избранное"></span>
-          </a>
-        </li>
-      </ul>
-      <a class="button navigation-button button-modal" href="#">Хочу сюда</a>
-    </nav>
-  </header>
+        <ul class="page-user-list list-reset">
+          <li class="page-user-item">
+            <a class="page-user-link page-user-link-search" href="#">
+              <span class="visually-hidden">Поиск.</span>
+            </a>
+          </li>
+          <li class="page-user-item">
+            <a class="page-user-link page-user-link-favorites" href="#">
+              <span class="page-user-favorites-num">12</span>
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+        </ul>
+        <a class="button page-nav-button button-modal" href="#">Хочу сюда</a>
+      </nav>
+    </header>
 
     <main class="main">
       <section class="filter">
-        <h1 class="filter-title">Гостиницы Седоны</h1>
+        <h1 class="filter-page-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs-list list-reset">
           <li class="breadcrubs-item">
             <a class="breadcrumbs-link breadcrumbs-link-home" href="index.html">
-              <img src="images/icon_home.svg" width="12" height="12" alt="Главная">
               <span class="visually-hidden">Главная</span>
             </a>
           </li>
-          <li class="breadcrubs-item"><img src="images/tick.svg" width="7" height="10"></li>
           <li class="breadcrubs-item">
             <a class="breadcrumbs-link breadcrumbs-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
           </li>
@@ -115,19 +114,16 @@
         <ul class="sorting-view view list-reset">
           <li class="view-item">
             <a class="view-link view-link-tile view-link-active" href="#">
-              <img src="images/tile.svg" width="16" height="14">
               <span class="visually-hidden">Вид плитками</span>
             </a>
           </li>
           <li class="view-item">
             <a class="view-link view-link-slideshow" href="#">
-              <img src="images/quick_view.svg" width="16" height="14px">
               <span class="visually-hidden">Вид превью</span>
             </a>
           </li>
           <li class="view-item">
             <a class="view-link view-link-list" href="#">
-              <img src="images/pack.svg" width="16" height="14">
               <span class="visually-hidden">Вид списком</span>
             </a>
           </li>
@@ -138,7 +134,7 @@
         <ul class="hotels-list list-reset">
           <li class="hotels-item">
             <figure class="hotels-image">
-              <img src="#" width="300" height="212" alt="Отель Amara Resort & Spa">
+              <img src="images/spa_amara_resort.jpg" width="300" height="212" alt="Отель Amara Resort & Spa">
             </figure>
             <a class="hotels-link" href="#">
               <h3 class="hotels-title">Amara Resort &amp; Spa</h3>
@@ -153,7 +149,7 @@
 
           <li class="hotels-item">
             <figure class="hotels-image">
-              <img src="images/diablo_villas_at_poco.svg" width="300" height="212" alt="Отель Villas at Poco Diablo">
+              <img src="images/diablo_villas_at_poco.jpg" width="300" height="212" alt="Отель Villas at Poco Diablo">
             </figure>
             <a class="hotels-link" href="#">
               <h3 class="hotels-title">Villas at Poco Diablo</h3>
@@ -161,14 +157,15 @@
             <span class="hotels-text hotels-text-name">Гостиница</span>
             <span class="hotels-text hotels-text-price">От 5000 ₽</span>
             <a class="button hotels-button hotels-more" href="#">Подробнее</a>
-            <button class="button button-light hotels-button hotels-favorites hotels-favorites-active" type="button">В избранном</button>
+            <button class="button button-light hotels-button hotels-favorites hotels-favorites-active" type="button">В
+              избранном</button>
             <span class="hotels-rating-star hotels-rating-star-4" aria-label="4 звезды."></span>
             <span class="hotel-rating">Рейтинг: 9,2</span>
           </li>
 
           <li class="hotels-item">
             <figure class="hotels-image">
-              <img src="images/quail_inn_desert.svg" width="300" height="212" alt="Отель Desert Quail Inn">
+              <img src="images/quail_inn_desert.jpg" width="300" height="212" alt="Отель Desert Quail Inn">
             </figure>
             <a class="hotels-link" href="#">
               <h3 class="hotels-title">Desert Quail Inn</h3>
@@ -183,7 +180,7 @@
 
           <li class="hotels-item">
             <figure class="hotels-image">
-              <img src="images/Inn_green_tree.svg" width="300" height="212" alt="Отель GreenTree Inn">
+              <img src="images/green_tree.jpg" width="300" height="212" alt="Отель GreenTree Inn">
             </figure>
             <a class="hotels-link" href="#">
               <h3 class="hotels-title">GreenTree Inn</h3>
@@ -223,7 +220,8 @@
         <p class="subscribe-text page-text">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
           <label class="visually-hidden" for="email">Ваш email</label>
-          <input class="subscribe-input form-input" id="email" name="email" type="email" placeholder="Ваш e-mail" required>
+          <input class="subscribe-input form-input" id="email" name="email" type="email" placeholder="Ваш e-mail"
+            required>
           <button class="button button-light subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
@@ -256,4 +254,5 @@
       </a>
     </footer>
   </body>
+
 </html>
