@@ -9,8 +9,7 @@
   </head>
 
   <body>
-
-    <header>
+    <header class="page-header">
       <nav class="page-nav">
         <a class="logo" href="index.html" aria-current="page">
           <img src="images/logo.svg" width="140" height="70" alt="Логотип Седона">
@@ -28,20 +27,20 @@
           </li>
         </ul>
 
-        <ul class="page-nav-list list-reset">
-          <li class="user-item">
-            <a class="user-link user-link-search" href="#">
-              <span class="visually-hidden"><img src="images/search.svg"></span>
+        <ulЮ class="page-user-list list-reset">
+          <li class="page-user-item">
+            <a class="page-user-link page-user-link-search" href="#">
+              <span class="visually-hidden">Поиск.</span>
             </a>
           </li>
-            <li class="user-item">
-              <a class="user-link user-link-favorites" href="#">
-                <span class="user-favorites-num">12</span>
-                <span class="visually-hidden"><img src="images/favorites.svg" alt="Избранное"></span>
-              </a>
-            </li>
+          <li class="page-user-item">
+            <a class="page-user-link page-user-link-favorites" href="#">
+              <span class="page-user-favorites-num">12</span>
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
         </ul>
-        <a class="button navigation-button button-modal" href="#">Хочу сюда</a>
+        <a class="button page-nav-button button-modal" href="#">Хочу сюда</a>
       </nav>
     </header>
 
@@ -51,13 +50,13 @@
         <div class="hero-image">
           <img src="images/welcome.svg" width="458" height="352" alt="Добро пожаловать в Седона">
         </div>
-        <div class="divider"></div>
       </section>
 
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества</h2>
         <div class="description">
-          <h2 class="description-title page-title">Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</h2>
+          <h2 class="description-title page-title">Седона — небольшой городок в Аризоне, <br>заслуживающий большего!
+          </h2>
           <p class="description-text page-text">Рассмотрим причины, по которым Седона круче, чем Гранд&#8209;Каньон!</p>
         </div>
         <ul class="advantages-list list-reset">
@@ -78,8 +77,8 @@
               <p class="advantages-text">Все достопримечательности находятся очень близко</p>
             </div>
           </li>
-          <li class="advantages-item advantages-item-dark">
-            <div class="advantages-content advantages-content">
+          <li class="advantages-item">
+            <div class="advantages-content">
               <h3 class="advantages-title">Красивая <br>дорога</h3>
               <p class="advantages-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
@@ -110,22 +109,19 @@
         <ul class="services-list list-reset">
           <li class="services-item">
             <div class="services-content services-content-home">
-              <h3 class="advantages-title">Жильё</h3>
-                <img src="images/house.svg" width="75px" height="72px" alt="Иконка домик">
+              <h3 class="services-title">Жильё</h3>
               <p class="advantages-text">Рекомендуем пожить в&nbsp;настоящем мотеле, <br>всё как в кино!</p>
             </div>
           </li>
           <li class="services-item">
             <div class="services-content services-content-food">
               <h3 class="advantages-title">Еда</h3>
-              <img src="images/food.svg" width="74px" height="70px" alt="Иконка бургер">
               <p class="advantages-text">Всегда заказывайте топовый&nbsp;фирменный бургер, вы не разочаруетесь!</p>
             </div>
           </li>
           <li class="services-item">
             <div class="services-content services-content-souvenirs">
               <h3 class="advantages-title">Сувениры</h3>
-              <img src="images/souvenir.svg" width="64px" height="76px" alt="Иконка коробка для сувениров">
               <p class="advantages-text">Не только китайского, <br>но и настоящего местного производства!</p>
             </div>
           </li>
@@ -133,7 +129,8 @@
       </section>
       <section class="search">
         <h2 class="search-title page-title">Заинтересовались?</h2>
-        <p class="search-text page-text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="search-text page-text">Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения
+          гостиниц в Седоне</p>
         <a class="search-button button button-modal" href="#">Поиск гостиницы в Седоне</a>
       </section>
       <section class="subscribe subscribe-home">
@@ -141,37 +138,39 @@
         <p class="subscribe-text page-text">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
           <label class="visually-hidden" for="subscribe-email">Ваш email</label>
-          <input class="subscribe-input form-input" id="subscribe-email" name="subscribe-email" type="email" placeholder="Ваш e-mail" required>
+          <input class="subscribe-input form-input" id="subscribe-email" name="subscribe-email" type="email"
+            placeholder="Ваш e-mail" required>
           <button class="button button-light subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
     <footer class="page-footer">
-        <ul class="social-list list-reset">
-          <li class="social-item">
-            <a class="social-link" href="https://vk.com/htmlacademy">
-              <span class="visually-hidden">ВКонтакте</span>
-              <img src="images/vk_icon.svg" width="48" height="41" alt="Логотип VK">
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="https://t.me/htmlacademy">
-              <span class="visually-hidden">Телеграм</span>
-              <img src="images/tg_icon.svg" width="48" height="41" alt="Логотип Telegram">
-            </a>
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
-              <span class="visually-hidden">YouTube</span>
-              <img src="images/youtube_icon.svg" width="48" height="41" alt="Логотип Youtube">
-            </a>
-          </li>
-        </ul>
-        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-        <a class="footer-dev" href="https://htmlacademy.ru/">
-          <span class="visually-hidden">Сайт разработчика</span>
-          <img src="images/htmlacademy.svg" width="115" height="34" alt="Логотип HTMLAcademy">
-        </a>
+      <ul class="social-list list-reset">
+        <li class="social-item">
+          <a class="social-link" href="https://vk.com/htmlacademy">
+            <span class="visually-hidden">ВКонтакте</span>
+            <img src="images/vk_icon.svg" width="48" height="41" alt="Логотип VK">
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://t.me/htmlacademy">
+            <span class="visually-hidden">Телеграм</span>
+            <img src="images/tg_icon.svg" width="48" height="41" alt="Логотип Telegram">
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://www.youtube.com/user/htmlacademyru">
+            <span class="visually-hidden">YouTube</span>
+            <img src="images/youtube_icon.svg" width="48" height="41" alt="Логотип Youtube">
+          </a>
+        </li>
+      </ul>
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="footer-dev" href="https://htmlacademy.ru/">
+        <span class="visually-hidden">Сайт разработчика</span>
+        <img src="images/htmlacademy.svg" width="115" height="34" alt="Логотип HTMLAcademy">
+      </a>
     </footer>
   </body>
+
 </html>
