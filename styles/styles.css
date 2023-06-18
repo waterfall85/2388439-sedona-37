@@ -487,7 +487,7 @@ img {
   padding: 35px 70px;
 
   color: #ffffff;
-
+  height: 412px;
   background-color: #4d799b;
   background-image: url("../images/catalog_backgraund.jpg");
   background-repeat: no-repeat;
@@ -525,7 +525,7 @@ img {
   width: 7px;
   height: 10px;
 
-  background-image: url("../images/house.svg");
+  background-image: url("../images/");
   background-repeat: no-repeat;
   transform: translateY(-50%);
 }
@@ -542,12 +542,16 @@ img {
   width: 13px;
   height: 15px;
 
-  background-image: url("../images/svg/breadcrumbs-link-home.svg");
+  background-image: url("../images/house.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* ФИЛЬТРЫ */
+/* Фильтры */
+
+.filter{
+  background-image: ;
+}
 
 .filter-form {
   display: flex;
@@ -574,14 +578,13 @@ img {
   line-height: 23px;
 }
 
-/* СОРТИРОВКА */
+/* Сортировка */
 
 .sorting {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  padding: 30px 70px;
-  }
+  padding: 0 70px;
+}
 
 .sorting-title {
   display: block;
@@ -612,7 +615,7 @@ img {
   gap: 8px;
 }
 
-/* ВИДЫ КАРТОЧЕК */
+/* Карточки */
 
 .view-link {
   display: block;
@@ -630,15 +633,15 @@ img {
 }
 
 .view-link-tile {
-  background-image: url("../images/svg/view-tile.svg");
+  background-image: url("../images/tile.svg");
 }
 
 .view-link-slideshow {
-  background-image: url("../images/svg/view-slideshow.svg");
+  background-image: url("../images/quick_view.svg");
 }
 
 .view-link-list {
-  background-image: url("../images/svg/view-list.svg");
+  background-image: url("../images/pack.svg");
 }
 
 /* ОТЕЛИ */
@@ -652,9 +655,14 @@ img {
   flex-wrap: wrap;
 }
 
-.hotels-img {
-  margin: 0;
+.hotels-item{
+  width: 340px;
+  height: 438px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+  margin:5px;
 }
+
 
 .hotels-link {
   color: #000000;
@@ -685,21 +693,21 @@ img {
   display: block;
   height: 37px;
 
-  background-image: url("../images/svg/stars.svg");
-  background-repeat: no-repeat;
+  background-image: url("../images/star.svg");
+  background-repeat: repeat-x;
   background-position: left center;
 }
 
 .hotels-rating-star-4 {
-  width: 90px;
+  width: 72px;
 }
 
 .hotels-rating-star-3 {
-  width: 70px;
+  width: 54px;
 }
 
 .hotels-rating-star-2 {
-  width: 50px;
+  width: 36px;
 }
 
 .hotel-rating {
@@ -715,11 +723,17 @@ img {
   border-radius: 4px;
 }
 
-/* ПАГИНАЦИЯ */
+/* Пагинация */
 
 .pagination-list {
   display: flex;
   flex-wrap: wrap;
+
+}
+
+.pagination-item{
+  list-style-type: none;
+  padding:0 4px 0 4px;
 }
 
 .pagination-link {
