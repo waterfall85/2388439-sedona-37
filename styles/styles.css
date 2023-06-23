@@ -66,24 +66,75 @@ img {
   clip-path: inset(100%);
 }
 
-.list-reset {
-  margin: 0;
-  padding: 0;
+.page-header {
+  position: relative;
+  z-index: 1;
+  height: 64px;
 
-  list-style: none;
-}
-
-.page-user-link{
-  display: inline-block;
-  width: 44px;
-  height: 44px;
-  background-repeat: no-repeat;
 }
 
 .page-nav{
   display: flex;
   flex-wrap: wrap;
   padding:0 70px;
+  height: 64px;
+  align-items: center;
+
+
+}
+
+.list-reset {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.page-nav-list {
+  max-width: 500px;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  height: 64px;
+}
+
+.page-nav-link {
+  display: inline-block;
+  padding: 20px 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+
+}
+
+.page-nav-current{
+  text-decoration: 2px;
+  text-decoration-color: inherit;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-underline-offset: 20px;
+}
+
+
+/*.page-nav-list li{
+  padding:20px 16px 20px 16px;
+}*/
+
+.page-user-list{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+}
+
+.page-user-link {
+  position: relative;
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
 }
 
 .logo{
@@ -110,6 +161,11 @@ img {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.page-nav-button {
+  width: 160px;
+  height: 36px;
 }
 
 .button-light {
@@ -213,31 +269,19 @@ img {
   text-align: center;
 }
 
-.page-header {
-  position: relative;
-  z-index: 1;
-}
-
-.page-nav-list{
-  max-width: 500px;
-  margin-right: auto;
-}
-.page-nav-link {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
-  color: #000000;
-  text-decoration: none;
-}
-
 .page-user-favorites-num {
+  position: absolute;
+  top: -10px;
+  right: 15px;
   display: inline-block;
   padding: 5px;
+
   font-size: 10px;
   line-height: 10px;
   font-family: "PT Sans", sans-serif;
   text-align: center;
   color: #ffffff;
+
   background-color: #7db54f;
   border-radius: 10px;
 }
@@ -248,7 +292,8 @@ img {
 }
 
 .hero {
-  padding: 70px;
+  padding:60px 70px;
+  text-align: center;
   color: #ffffff;
   background-color: #5c84ab;
   background-image: url("../images/index_background.png");
