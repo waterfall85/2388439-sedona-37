@@ -333,14 +333,17 @@ img {
   height: 100%;
 }
 
+.description {
+  padding: 70px;
+  height: 261px;
+}
+
+/*
 .advantages-list{
   display: flex;
   flex-wrap: wrap;
 }
 
-.description {
-  padding: 70px;
-}
 
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.2);
@@ -397,7 +400,7 @@ img {
   width: 100%;
   height: 100%;
 }
-
+*/
 .services-list {
   display: flex;
   flex-wrap: wrap;
