@@ -25,12 +25,11 @@
 
 html {
   box-sizing: border-box;
-
+  height: 100%;
   background-color: #f2f2f2;
 }
 
 body {
-
   width: 1200px;
   margin: 0 auto;
   display:flex;
@@ -66,22 +65,50 @@ img {
   clip-path: inset(100%);
 }
 
+/*----------------------Общее свойство для кнопок и ссылок.---------------------- */
+
+.button {
+  display: inline-block;
+  margin: 0;
+  padding: 8px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: inherit;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #756157;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-light {
+  background-color: #82b3d3;
+}
+
+/*-------------------------------------------- */
+
 .page-header {
   position: relative;
   z-index: 1;
   height: 64px;
-
 }
 
 .page-nav{
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   padding:0 70px;
   height: 64px;
   align-items: center;
-
-
 }
+
+/*---------------------- Главная, О седоне, Гостиницы ---------------------- */
 
 .list-reset {
   padding: 0;
@@ -109,18 +136,18 @@ img {
 
 }
 
+/*---------------------- Коричневая линия под главной ---------------------- */
+
 .page-nav-current{
   text-decoration: 2px;
-  text-decoration-color: inherit;
+  text-decoration-color: #756257;;
   text-decoration-line: underline;
   text-decoration-style: solid;
   text-underline-offset: 20px;
+
 }
 
-
-/*.page-nav-list li{
-  padding:20px 16px 20px 16px;
-}*/
+/*----------------------Поиск, избранное.---------------------- */
 
 .page-user-list{
   display: flex;
@@ -137,44 +164,31 @@ img {
   background-repeat: no-repeat;
 }
 
-.logo{
-  margin-right: 28px;
-}
-
-/* Общее свойство для кнопок и ссылок */
-
-.button {
-  display: inline-block;
-  margin: 0;
-  padding: 8px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: inherit;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
-  text-decoration: none;
-
-  background-color: #756157;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
 .page-nav-button {
   width: 160px;
   height: 36px;
 }
 
-.button-light {
-  background-color: #82b3d3;
+.page-user-favorites-num {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  display: inline-block;
+  padding: 5px;
+
+  font-size: 10px;
+  line-height: 10px;
+  font-family: "PT Sans", sans-serif;
+  text-align: center;
+  color: #ffffff;
+
+  background-color: #7db54f;
+  border-radius: 10px;
 }
 
-.button-transparent {
-  background-color: transparent;
-}
+/*-------------------------------------------- */
+
+
 
 /* Общие свойства для заголовков и текстов. */
 
@@ -197,105 +211,12 @@ img {
   text-align: center;
 }
 
-/* Общие свойства для инпутов */
-
-.form-input {
-  width: 100%;
-  height: 48px;
-  padding: 15px;
-
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: inherit;
-  color: #000000;
-
-  background-color: #f2f2f2;
-  border: 2px solid transparent;
-  border-radius: 4px;
-}
-
-/* ------------------------------------------------------------------ */
-
-.form-input::placeholder {
-  opacity: 0.6;
-}
-
-.page-user-link-search {
-  background-image: url("../images/search.svg");
-}
-
-.page-user-link-favorites {
-  background-image: url("../images/rheart.svg");
-}
-.button-light {
-  background-color: #82b3d3;
-}
-
-.button-transparent {
-  background-color: transparent;
-}
-
-.form-input {
-  width: 100%;
-  height: 48px;
-  padding: 13px 17px 10px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  font-family: "PT Sans", sans-serif;
-  color: #000000;
-  background-color: #f2f2f2;
-  border: 2px solid transparent;
-  border-radius: 4px;
-}
-
-.page-title {
-  margin: 0;
-
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 36px;
-  text-align: center;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.page-text {
-  margin: 0;
-
-  font-size: 22px;
-  line-height: 26px;
-  text-align: center;
-}
-
-.page-user-favorites-num {
-  position: absolute;
-  top: -10px;
-  right: 15px;
-  display: inline-block;
-  padding: 5px;
-
-  font-size: 10px;
-  line-height: 10px;
-  font-family: "PT Sans", sans-serif;
-  text-align: center;
-  color: #ffffff;
-
-  background-color: #7db54f;
-  border-radius: 10px;
-}
-
-.navigation-button {
-  width: 160px;
-
-}
+/*---------------------- hero ---------------------- */
 
 .hero {
   position: relative;
 
-  padding:60px 70px;
-
+  padding: 60px 70px;
   text-align: center;
   color: #ffffff;
   background-color: #5c84ab;
@@ -333,37 +254,96 @@ img {
   height: 100%;
 }
 
+/*---------------------description-----------------------*/
+
 .description {
   padding: 70px;
   height: 261px;
 }
 
-/*
+/*----------------------Общие свойства для инпутов----------------------*/
+
+.form-input {
+  width: 100%;
+  height: 48px;
+  padding: 15px;
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: inherit;
+  color: #000000;
+
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+.form-input::placeholder {
+  opacity: 0.6;
+}
+
+.page-user-link-search {
+  background-image: url("../images/search.svg");
+}
+
+.page-user-link-favorites {
+  background-image: url("../images/rheart.svg");
+}
+.button-light {
+  background-color: #82b3d3;
+}
+
+.button-transparent {
+  background-color: transparent;
+}
+
+.form-input {
+  width: 100%;
+  height: 48px;
+  padding: 13px 17px 10px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
+  border-radius: 4px;
+}
+
+/* ------------------------------------------------------------------ */
+
+
+
 .advantages-list{
   display: flex;
   flex-wrap: wrap;
 }
 
-
 .advantages-item {
   background-color: rgba(131, 179, 211, 0.2);
 }
+
+/* --------------------------------background четных блоков---------------------------------- */
 
 .advantages-item:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+/* --------------------------------background сних блоков Настоящий городок и Есть мост дьявола---------------------------------- */
 .advantages-item-full {
   color: #ffffff;
-
   background-color: #82b3d3;
 }
+
 
 .advantages-container {
   display: flex;
   flex-wrap: wrap;
 }
 
+/*
 .advantages-item:last-child .advantages-image {
   order: -1;
 }
@@ -400,12 +380,12 @@ img {
   width: 100%;
   height: 100%;
 }
-*/
+
 .services-list {
   display: flex;
   flex-wrap: wrap;
 }
-
+*/
 
 .services-item {
   background-color: rgba(131, 179, 211, 0.12);
