@@ -53,6 +53,7 @@ img {
 
 .logo{
   height:70px;
+  padding-right: 46px;
 }
 
 .visually-hidden {
@@ -481,7 +482,7 @@ img {
   text-decoration: none;
 }
 
-/*-----------------------Каталог--------------------------*/
+/*--------Каталог------------Каталог----------Каталог--------Каталог--------Каталог--------Каталог----------Каталог-----------*/
 
 /*----------------------Общие свойства для инпутов----------------------*/
 
@@ -536,9 +537,9 @@ img {
 
 /* ------------------------------------------------------------------ */
 
-.filter {
-  padding: 35px 70px;
+ .filter {
 
+  padding: 35px 70px;
   color: #ffffff;
   height: 412px;
   background-color: #4d799b;
@@ -547,14 +548,8 @@ img {
   background-size: cover;
 }
 
-.catalog-title {
-  margin: 0 0 7px;
-
-  font-size: 60px;
-  line-height: 78px;
-}
-
 /* Хлебные крошки */
+
 
 .breadcrumbs-list {
   display: flex;
@@ -567,6 +562,7 @@ img {
 
   margin-right: 28px;
 }
+
 
 .breadcrumbs-item:not(:last-child)::after {
   content: "";
@@ -825,4 +821,4 @@ img {
 
   background-color: transparent;
   border-color: transparent;
-}
+} */
